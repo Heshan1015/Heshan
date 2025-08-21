@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<body>
+    <form onsubmit="checkForm()" action="" id="form1">
+        <label for="name">Name</label>
+        <input type="text" id="name">
+        <br>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+        <button type="submit">Sign up</button>
+        <!-- Type Age, text, email etc.. -->
+         <br>
+         <br>
+        <label for="age">Age:</label>
+        <input type="number" id="age"
+        min="1" max="100">
+        <br>
+        <br>
+
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender">
+        
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender">
+        <br>
+        <br>
+        <label for="hobbies">Cricket</label>
+        <input type="checkbox" id="hobby">
+        <br>
+        <label for="hobbies">Volleyball</label>
+        <input type="checkbox" id="hobby">
+        <br>
+        <label for="hobbies">Netball</label>
+        <input type="checkbox" id="hobby">
+        <br>
+        <label for="hobbies">Tennis</label>
+        <input type="checkbox" id="hobby">
+        <br>
+        <label for="hobbies">Football</label>
+        <input type="checkbox" id="hobby">
+    </form>
+
+    <button type="button" onclick="Hello()">Click me</button>
+    <script>
+        function checkForm(){
+            let name = document.getElementById('name').value
+            let age = document.getElementById('age').value
+
+            console.log(name);
+            console.log(age);
+            event.preventDefault();
+        }
+
+        function Hello(){
+            console.log("Hello world")
+        }
+    </script>
+</body>
+</html>

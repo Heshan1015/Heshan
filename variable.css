@@ -1,0 +1,17 @@
+:root{
+    --main-color: green;
+    --padding-size: 1rem;
+    --bg-color: black;
+    --bg-text: white;
+
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--bg-text);
+}
+
+
+button{
+    background-color: var(--main-color);
+    padding: var(--main-color);
+}
